@@ -47,6 +47,7 @@ defmodule SensorHub.MixProject do
       {:shoehorn, "~> 0.9.1"},
       {:ring_logger, "~> 0.11.0"},
       {:toolshed, "~> 0.4.0"},
+      {:nerves_motd, "~> 0.1.0"},
       {:circuits_i2c, "~> 2.0.6"},
 
       # Allow Nerves.Runtime on host to support development, testing and CI.
@@ -55,8 +56,7 @@ defmodule SensorHub.MixProject do
 
       # Dependencies for all targets except :host
       {:nerves_pack, "~> 0.7.1", targets: @all_targets},
-      {:nerves_motd, "~> 0.1.0"},
-
+      
       # Dependencies for specific targets
       # NOTE: It's generally low risk and recommended to follow minor version
       # bumps to Nerves systems. Since these include Linux kernel and Erlang

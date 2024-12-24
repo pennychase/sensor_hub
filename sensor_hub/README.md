@@ -1,6 +1,10 @@
 # SensorHub
 
-**TODO: Add description**
+This is the code for the sensor hub, i.e., the Raspberry Pi managing the I2C bus.
+
+mix.exs changes to support project:
+ - Added :inets to application --> enable networking
+ - Added :nerves_motd and :circuits_i2c to deps
 
 ## Targets
 
